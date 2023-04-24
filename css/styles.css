@@ -49,25 +49,18 @@ text-decoration: none;
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
+h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
+    padding: 0;
 }
 
 .container {
-    box-sizing: border-box;
-    /* display: flex; */
+    /* box-sizing: border-box; */
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
 
 }
 .visually-hidden {
@@ -88,16 +81,14 @@ ul {
   | Header style
   |============================
 */
-.page-header {
-    display: flex;
-    width: 1158px;
-    border-bottom: 1px solid #e7e9fc;  
-}
 
+.header-container {
+    display: flex;
+    }
 .nav {       
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
 }
 
 .logo-main-link {
@@ -126,31 +117,31 @@ ul {
         
 }
 
-.nav-list {
+ .nav-list {
     display: flex;
     gap: 40px;
-    /* justify-content: center; */
+    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-color)
-}
+} 
 .nav-item {
     margin-right: 40px;
+    gap: 40px;
 }
 .nav-item:last-child {
    margin-right: 0px;
 }
 .nav-link link{
-     
-    /* outline: 1px solid; */
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: block;
+    padding: 24px 0;
     color: var(--secondary-txt-color);
 }
 
 .contact {
+    margin-left: auto;
     font-style: normal;
 }
 
@@ -170,8 +161,7 @@ ul {
 
 
 .contact-link {
-    /* justify-content: center; */
-    margin: 24px 24px;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -258,7 +248,6 @@ padding: 120px 0;
 .about-list {
     display: flex;
     padding-left: 0px;
-    margin-right: 24px;
     gap: 24px;}
 
 .about-item:last-child {
@@ -399,7 +388,7 @@ padding: 120px 0;
     background: #2E2F42;
 }
 
-.footer-link link {
+.footer-link {
     display: flex;
     margin-bottom: 16px;
     display: inline-block;
@@ -414,7 +403,6 @@ padding: 120px 0;
 }
 .logo-accent {
     display: flex;
-    /* display: inline-block; */
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
