@@ -81,7 +81,9 @@ h1,h2,h3,h4,h5,h6,p,ul {
   | Header style
   |============================
 */
-
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
     display: flex;
     }
@@ -402,20 +404,19 @@ padding: 120px 0;
     font-family: "Raleway", sans-serif;
 }
 .logo-accent {
-    display: flex;
+    /* display: flex;
     display: inline-block;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     align-items: center;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    text-transform: uppercase; */
     font-family: var(--secondary-font);
     color: #F4F4FD;
 }
 
 .footer-text {
-    /* display: inline-block; */
     max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
@@ -591,6 +592,7 @@ row-gap: 48px;
 
 .portfolio-img {
     display: block;
+    border-top: none;
     padding-left: 0px;
     margin-right: 24px;
     max-width: 100%;
