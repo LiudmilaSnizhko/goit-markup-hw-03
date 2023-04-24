@@ -87,8 +87,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     }
 .nav {       
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+    align-items: center;
+    
 }
 
 .logo-main-link {
@@ -134,7 +134,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .nav-item:last-child {
    margin-right: 0px;
 }
-.nav-link link{
+.nav-link{
     display: block;
     padding: 24px 0;
     color: var(--secondary-txt-color);
@@ -403,6 +403,7 @@ padding: 120px 0;
 }
 .logo-accent {
     display: flex;
+    display: inline-block;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
